@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>algorithm</title>
+</head>
+
+<body>
+  <script src="utils/utils.js" charset="utf-8"></script>
+  <script src="sort/bubbleSort.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    const array = getRandomArray(100);
+    console.log(array);
+    const result1 = costClock(() => bubbleSort(array));
+    const result2 = costClock(() => modifiedBubbleSort(array));
+    console.log(result1);
+    console.log(result2);
+  </script>
+</body>
+
+</html>
