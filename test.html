@@ -11,13 +11,28 @@
 <body>
   <script src="utils/utils.js" charset="utf-8"></script>
   <script src="sort/bubbleSort.js" charset="utf-8"></script>
+  <script src="sort/selectionSort.js" charset="utf-8"></script>
+  <script src="sort/insertionSort.js" charset="utf-8"></script>
+  <script src="sort/mergeSort.js" charset="utf-8"></script>
+  <script src="sort/quickSort.js" charset="utf-8"></script>
   <script type="text/javascript">
-    const array = getRandomArray(100);
+    const array = getRandomArray(10000);
+    // const array = [5, 4, 9, 5, 4, 10, 1, 6, 8, 5];
     console.log(array);
     const result1 = costClock(() => bubbleSort(array));
     const result2 = costClock(() => modifiedBubbleSort(array));
+    const result3 = costClock(() => selectionSort(array));
+    const result4 = costClock(() => insertionSort(array));
+    const result5 = costClock(() => mergeSort(array));
+    const result6 = costClock(() => quickSort(array));
+    const result7 = costClock(() => modifiedQuickSort(array));
     console.log(result1);
     console.log(result2);
+    console.log(result3);
+    console.log(result4);
+    console.log(result5);
+    console.log(result6);
+    console.log(result7);
   </script>
 </body>
 
