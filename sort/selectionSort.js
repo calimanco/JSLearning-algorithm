@@ -1,6 +1,8 @@
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "selectionSort" }] */
+
 function selectionSort(_arr) {
   const arr = [].slice.call(_arr);
-  const len = array.length;
+  const len = arr.length;
   for (let i = 0; i < len - 1; i += 1) {
     let indexMin = i;
     for (let f = i; f < len; f += 1) {

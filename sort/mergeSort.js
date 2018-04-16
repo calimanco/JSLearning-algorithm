@@ -1,3 +1,5 @@
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "mergeSort" }] */
+
 function mergeSort(_arr) {
   const arr = [].slice.call(_arr);
   function merge(left, right) {

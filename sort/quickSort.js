@@ -1,3 +1,5 @@
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "[quickSort, modifiedQuickSort]" }] */
+
 function quickSort(_arr) {
   const arr = [].slice.call(_arr);
   function partition(low, high) {

@@ -1,4 +1,6 @@
-function getRandomArray(len = 100, min = 0, max = 100) {
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "[getRandomArray, costClock]" }] */
+
+function getRandomArray(len = 10000, min = 0, max = 100) {
   const array = [];
   const w = max - min;
   for (let i = 0; i < len; i += 1) {

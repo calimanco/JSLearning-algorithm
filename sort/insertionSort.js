@@ -1,3 +1,5 @@
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "insertionSort" }] */
+
 function insertionSort(_arr) {
   const arr = [].slice.call(_arr);
   const len = arr.length;
