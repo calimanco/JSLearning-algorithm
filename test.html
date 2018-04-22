@@ -11,21 +11,23 @@
 <body>
   <script src="struct/binarySearchTree.js" charset="utf-8"></script>
   <script src="utils/utils.js" charset="utf-8"></script>
+  <script src="search/binarySearch.js" charset="utf-8"></script>
+  <script src="search/sequentialSearch.js" charset="utf-8"></script>
   <script src="sort/bubbleSort.js" charset="utf-8"></script>
   <script src="sort/selectionSort.js" charset="utf-8"></script>
   <script src="sort/insertionSort.js" charset="utf-8"></script>
   <script src="sort/mergeSort.js" charset="utf-8"></script>
   <script src="sort/quickSort.js" charset="utf-8"></script>
   <script src="sort/heapSort.js" charset="utf-8"></script>
-  <script type="text/javascript">
+  <script type="module">
     const array = getRandomArray(10000);
     // const array = [5, 4, 9, 5, 4, 10, 1, 6, 8, 5];
-    // console.log(array);
-    // const result1 = costClock(() => bubbleSort(array));
-    // const result2 = costClock(() => modifiedBubbleSort(array));
-    // const result3 = costClock(() => selectionSort(array));
-    // const result4 = costClock(() => insertionSort(array));
-    // const result5 = costClock(() => mergeSort(array));
+    console.log(array);
+    const result1 = costClock(() => bubbleSort(array));
+    const result2 = costClock(() => modifiedBubbleSort(array));
+    const result3 = costClock(() => selectionSort(array));
+    const result4 = costClock(() => insertionSort(array));
+    const result5 = costClock(() => mergeSort(array));
     const result6 = costClock(() => quickSort(array));
     const result7 = costClock(() => modifiedQuickSort(array));
     const result8 = costClock(() => heapSort(array));
@@ -40,15 +42,19 @@
     //   });
     //   return arr;
     // });
-    // console.log(result1);
-    // console.log(result2);
-    // console.log(result3);
-    // console.log(result4);
-    // console.log(result5);
+    console.log(result1);
+    console.log(result2);
+    console.log(result3);
+    console.log(result4);
+    console.log(result5);
     console.log(result6);
     console.log(result7);
     console.log(result8);
     // console.log(result9);
+    // const arr = quickSort(array);
+    // console.log(arr);
+    // console.log(binarySearch(arr, 5));
+    // console.log(sequentialSearch(arr, 5));
   </script>
 </body>
 

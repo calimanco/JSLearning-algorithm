@@ -1,4 +1,4 @@
-
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "heapSort" }] */
 
 function heapSort(_arr) {
   const arr = [].slice.call(_arr);

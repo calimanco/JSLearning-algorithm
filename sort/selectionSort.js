@@ -1,19 +1,18 @@
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "selectionSort" }] */
+/* global swap */
 
 function selectionSort(_arr) {
   const arr = [].slice.call(_arr);
   const len = arr.length;
   for (let i = 0; i < len - 1; i += 1) {
     let indexMin = i;
-    for (let f = i; f < len; f += 1) {
+    for (let f = i + 1; f < len; f += 1) {
       if (arr[indexMin] > arr[f]) {
         indexMin = f;
       }
     }
     if (indexMin !== i) {
-      arr[indexMin] += arr[i];
-      arr[i] = arr[indexMin] - arr[i];
-      arr[indexMin] -= arr[i];
+      swap(arr, indexMin, i);
     }
   }
   return arr;

@@ -18,3 +18,10 @@ function costClock(fn) {
     cost: pass,
   };
 }
+
+function swap(_arr, index1, index2) {
+  const arr = _arr;
+  arr[index1] += arr[index2];
+  arr[index2] = arr[index1] - arr[index2];
+  arr[index1] -= arr[index2];
+}

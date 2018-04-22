@@ -1,4 +1,5 @@
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "[bubbleSort, modifiedBubbleSort]" }] */
+/* global swap */
 
 function bubbleSort(_arr) {
   const arr = [].slice.call(_arr);
@@ -6,9 +7,7 @@ function bubbleSort(_arr) {
   for (let i = 0; i < len; i += 1) {
     for (let f = 0; f < len - 1; f += 1) {
       if (arr[f] > arr[f + 1]) {
-        arr[f] += arr[f + 1];
-        arr[f + 1] = arr[f] - arr[f + 1];
-        arr[f] -= arr[f + 1];
+        swap(arr, f, f + 1);
       }
     }
   }
@@ -21,9 +20,7 @@ function modifiedBubbleSort(_arr) {
   for (let i = 0; i < len; i += 1) {
     for (let f = 0; f < len - i - 1; f += 1) {
       if (arr[f] > arr[f + 1]) {
-        arr[f] += arr[f + 1];
-        arr[f + 1] = arr[f] - arr[f + 1];
-        arr[f] -= arr[f + 1];
+        swap(arr, f, f + 1);
       }
     }
   }
