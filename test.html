@@ -19,7 +19,7 @@
   <script src="sort/mergeSort.js" charset="utf-8"></script>
   <script src="sort/quickSort.js" charset="utf-8"></script>
   <script src="sort/heapSort.js" charset="utf-8"></script>
-  <script type="module">
+  <script type="text/javascript">
     const array = getRandomArray(10000);
     // const array = [5, 4, 9, 5, 4, 10, 1, 6, 8, 5];
     console.log(array);
@@ -31,6 +31,8 @@
     const result6 = costClock(() => quickSort(array));
     const result7 = costClock(() => modifiedQuickSort(array));
     const result8 = costClock(() => heapSort(array));
+    const result10 = costClock(() => modifiedMergeSort(array));
+
     // const result9 = costClock(() => {
     //   const binarySearchTree = new BinarySearchTree(array);
     //   binarySearchTree.removeNode(5);
@@ -50,6 +52,7 @@
     console.log(result6);
     console.log(result7);
     console.log(result8);
+    console.log(result10);
     // console.log(result9);
     // const arr = quickSort(array);
     // console.log(arr);
